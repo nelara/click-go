@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Click&Go",
+  "description": "This extension will click on add close button.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "http://www.delfi.ee/*",
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "script.js"
+      ]
+    }
+  ]
+}
